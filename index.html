@@ -40,13 +40,13 @@
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 
         /* Camera Preview Vandiep */
-        #camera-preview {
+       /* #camera-preview {
             position: absolute; top: 15px; right: 15px;
             width: 120px; height: 90px;
             border: 2px solid rgba(255,0,0,0.5); 
             transform: scaleX(-1); opacity: 0.6; border-radius: 8px;
         }
-        
+        */
         /* Vandiep */
         #copyright {
             position: absolute;
@@ -234,8 +234,8 @@
             // Init colors Vandiep
             const colors = new Float32Array(count * 3);
             const baseColor = new THREE.Color();
-            if(type === 'gold') baseColor.setHex(0xFFD700);
-            else if(type === 'red') baseColor.setHex(0xFF0000);
+            if(type === 'gold') baseColor.setHex(0x00C853);
+            else if(type === 'red') baseColor.setHex(0x2196F3);
             else baseColor.setHex(0xFFFFFF);
 
             for(let i=0; i<count; i++) {
@@ -530,3 +530,4 @@
     </script>
 </body>
 </html>
+
